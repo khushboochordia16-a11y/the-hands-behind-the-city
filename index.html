@@ -6246,7 +6246,7 @@ function showDialogueLine() {
   panel.classList.add('visible');
 
   // Trigger natural voiceover synthesis for every narration & dialogue line!
-  SoundSystem.speakLine(line.text, line.voice || 'aayan');
+  SoundSystem.speakLine(   line.text,   line.voice || 'aayan',   line.audio );
 
   let charIdx = 0;
   const text = line.text;
